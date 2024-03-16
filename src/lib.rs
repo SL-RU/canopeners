@@ -805,10 +805,10 @@ impl ReqRes {
 
 #[derive(Debug)]
 pub struct Pdo {
-    node_id: u8,
-    pdo_index: u8, // PDO index (1 to 4)
-    reqres: ReqRes,
-    data: Vec<u8>, // Data (1 to 8 bytes)
+    pub node_id: u8,
+    pub pdo_index: u8, // PDO index (1 to 4)
+    pub reqres: ReqRes,
+    pub data: Vec<u8>, // Data (1 to 8 bytes)
 }
 
 impl Pdo {
