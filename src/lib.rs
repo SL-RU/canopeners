@@ -86,7 +86,7 @@ impl FrameRW for Nmt {
 #[binrw]
 #[br(repr(u8))]
 #[bw(repr(u8))]
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, PartialEq)]
 pub enum NmtFunction {
     StartRemoteNode = 0x01,
     StopRemoteNode = 0x02,
